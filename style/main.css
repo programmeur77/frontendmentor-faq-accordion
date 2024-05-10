@@ -1,23 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 23 |   @import './faq';
+ *    |           ^^^^^^^
+ *    '
+ *   style/components/_faq-section.scss 23:11  @import
+ *   style/main.scss 5:9                       root stylesheet */
 
-body {
-  width: 100dvw;
-  height: 100dvh;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  place-items: center;
-  background-color: hsl(275, 100%, 97%);
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 23 \2502    @import './faq';\a    \2502            ^^^^^^^\a    \2575 \a   style/components/_faq-section.scss 23:11  @import\a   style/main.scss 5:9                       root stylesheet";
 }
-
-.faq-header-section {
-  grid-row: 1/span 2;
-}
-
-/*# sourceMappingURL=main.css.map */
