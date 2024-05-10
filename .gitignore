@@ -1,0 +1,5 @@
+# Prettier config file
+.prettierrc
+
+# NPM files and folders
+package-lock.json
