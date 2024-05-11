@@ -20,5 +20,26 @@
     }
   }
 
-  @import './faq';
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  border-bottom: 1px solid grey;
+  padding: 10px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__answer-section {
+    max-height: 0;
+    line-height: 1.3rem;
+    overflow: hidden;
+  }
+
+  &__answer-section--active {
+    max-height: 100%;
+  }
 }
